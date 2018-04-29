@@ -123,13 +123,15 @@ int main(int argc, char * argv[])
 				break;
 		}
 	}
-	/*push('a');
-	push('b');
-	push('c');
-	push('d');
-	push('e');
-	push('f');*/
-	PrintStack();
+	if (Stack.size != 0)
+	{
+		printf("Error char :");
+		PrintStack();
+	}
+	else
+	{
+		printf("It`s all right");
+	}
 	getch();
 	return 0;
 }
