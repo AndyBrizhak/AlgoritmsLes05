@@ -47,10 +47,15 @@ void fromArray(Node **head, int *arr, size_t size) {
 int* toArray(const Node *head, int leng) {
 	/*int leng = length(head);*/
 	int *values = (int*)malloc(leng * sizeof(int));
-	while (head) {
-		values[--leng] = head->value;
-		head = head->next;
-	}
+	int i = 0;
+	//while (head) {
+	//	values[--leng] = head->value;
+	//	head = head->next;
+	//}
+	while (i<leng) {
+			values[i++] = head->value;
+			head = head->next;
+		}
 	return values;
 }
 
