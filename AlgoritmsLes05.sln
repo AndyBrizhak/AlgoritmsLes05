@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CheckMemory", "CheckMemory\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CheckBrackets", "CheckBrackets\CheckBrackets.vcxproj", "{B49D3851-D9B6-4DE2-AE69-F9DAB5C15980}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CopyList", "CopyList\CopyList.vcxproj", "{733AC94D-A0BE-40FF-A484-04C4E7A41C13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{B49D3851-D9B6-4DE2-AE69-F9DAB5C15980}.Release|x64.Build.0 = Release|x64
 		{B49D3851-D9B6-4DE2-AE69-F9DAB5C15980}.Release|x86.ActiveCfg = Release|Win32
 		{B49D3851-D9B6-4DE2-AE69-F9DAB5C15980}.Release|x86.Build.0 = Release|Win32
+		{733AC94D-A0BE-40FF-A484-04C4E7A41C13}.Debug|x64.ActiveCfg = Debug|x64
+		{733AC94D-A0BE-40FF-A484-04C4E7A41C13}.Debug|x64.Build.0 = Debug|x64
+		{733AC94D-A0BE-40FF-A484-04C4E7A41C13}.Debug|x86.ActiveCfg = Debug|Win32
+		{733AC94D-A0BE-40FF-A484-04C4E7A41C13}.Debug|x86.Build.0 = Debug|Win32
+		{733AC94D-A0BE-40FF-A484-04C4E7A41C13}.Release|x64.ActiveCfg = Release|x64
+		{733AC94D-A0BE-40FF-A484-04C4E7A41C13}.Release|x64.Build.0 = Release|x64
+		{733AC94D-A0BE-40FF-A484-04C4E7A41C13}.Release|x86.ActiveCfg = Release|Win32
+		{733AC94D-A0BE-40FF-A484-04C4E7A41C13}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
