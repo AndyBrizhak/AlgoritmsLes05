@@ -44,6 +44,16 @@ void fromArray(Node **head, int *arr, size_t size) {
 	} while (i-- != 0);
 }
 
+int* toArray(const Node *head, int leng) {
+	/*int leng = length(head);*/
+	int *values = (int*)malloc(leng * sizeof(int));
+	while (head) {
+		values[--leng] = head->value;
+		head = head->next;
+	}
+	return values;
+}
+
 void printLinkedList( Node *head) {
 	while (head) {
 		printf("%d ", head->value);
@@ -52,6 +62,13 @@ void printLinkedList( Node *head) {
 	printf("\n");
 }
 
+void pushBack(Node *head, int value) {				//добавляет новый элемент в конец списка
+	Node *last = getLast(head);
+	Node *tmp = (Node*)malloc(sizeof(Node));
+	tmp->value = value;
+	tmp->next = NULL;
+	last->next = tmp;
+}
 
 int main(int argc, char * argv[])
 {
@@ -61,10 +78,11 @@ int main(int argc, char * argv[])
 	//Создаём список из массива
 	fromArray(&head1, arr, 10);
 	printLinkedList(head1);
-
-	
-
-	
+	getch();
+	int*CopyAr = toArray(head1, 10);
+	fromArray(&head2, CopyAr, 10);
+	printLinkedList(head2);
+		
 	getch();
 	return 0;
 }
