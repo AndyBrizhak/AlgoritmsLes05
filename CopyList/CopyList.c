@@ -14,7 +14,7 @@ typedef struct Node {
 
 const Node *head1;
 const Node *head2;
-
+const Node *head3;
 
 void push(Node **head, int data)
 {
@@ -59,6 +59,14 @@ int* toArray(const Node *head, int leng) {
 	return values;
 }
 
+//void CopyList(Node *head1, Node *head2)
+//{
+//	while (head1) {
+//		push(head2, head1->value);
+//		head1 = head1->next;
+//	}
+//}
+
 void printLinkedList( Node *head) {
 	while (head) {
 		printf("%d ", head->value);
@@ -79,6 +87,7 @@ int main(int argc, char * argv[])
 {
 	Node *head1 = NULL;
 	Node *head2 = NULL;
+	Node *head3 = NULL;
 	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
 	//Создаём список из массива
 	fromArray(&head1, arr, 10);
@@ -87,7 +96,8 @@ int main(int argc, char * argv[])
 	int*CopyAr = toArray(head1, 10);
 	fromArray(&head2, CopyAr, 10);
 	printLinkedList(head2);
-		
+	/*CopyList(head1, head3); // выдает ошибку
+	printLinkedList(head3);*/
 	getch();
 	return 0;
 }
