@@ -33,11 +33,11 @@ typedef struct queue   // Очередь
 	node->next = NULL;
 
 	// Если очередь  пуста, то ...
-	if (queue->head ==NULL && queue->tail ==NULL)
+	if (queue->head == NULL && queue->tail == NULL)
 	{
 		// Первый элемент, теперь он и
 		// вершина и хвост
-		queue->head = node; 
+		queue->head = node;
 		queue->tail = node;
 	}
 	else
@@ -48,8 +48,8 @@ typedef struct queue   // Очередь
 		// Созданный узел становится хвостом
 		queue->tail = node;
 	}
-///*
-//	*/return queue;
+	///*
+	//	*/return queue;
 }
 
 // Извлечение элемента из очереди
@@ -98,17 +98,15 @@ int main() {
 	Myqueue->head = NULL;
 	Myqueue->tail = NULL;
 	int a;
-	for (int i = 0; i<3; i++) 
+	for (int i = 0; i<3; i++)
 	{
 		printf("Введите элемент очереди : ");
 		scanf("%d", &a);
 		/*Queue* queue =*/ Push(Myqueue, a);
 	}
 	printf("\n");
-	getchar();
 	Print(Myqueue);
-	
-	getchar(); 
+
+	getchar();
 	return 0;
 }
-
